@@ -1,0 +1,359 @@
+/* =============================================================================
+   E aí, pessoal! Bem-vindo ao STYLES.CSS da Barbearia The Blinders! 🎉
+   ============================================================================
+
+   Aqui tá tudo que deixa nosso site com cara de barbearia old school!
+   Organizei tudo bonitinho pra vocês estudarem e entenderem fácil.
+
+   DICAS RÁPIDAS PROS ESTUDANTES:
+   - CSS é tipo uma folha de estilo que "cascata" pro site todo
+   - Cada regra é: SELETOR { PROPRIEDADE: VALOR; } - simples assim!
+   - A ordem importa! O que vem depois "ganha" dos anteriores
+   - Comenta teu código pra não esquecer o que faz depois!
+   ============================================================================ */
+
+/* ========== 1. CARREGANDO AS FONTES ==========
+   Pegando fontes legais do Google Fonts pra deixar tudo elegante
+   ============================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* ========== 2. CONFIGURAÇÕES GERAIS ==========
+   Aqui a gente define como o site inteiro vai ficar
+   ============================================================================ */
+
+body {
+  /* Fundo bem dark pra atmosfera old school da barbearia */
+  background: #0a0a0a;
+
+  /* Fonte moderna pros textos normais */
+  font-family: 'Inter', sans-serif;
+
+  /* Cor padrão dos textos (cinza clarinho) */
+  color: #f3f4f6;
+
+  /* Espaçamento entre linhas pra ficar fácil de ler */
+  line-height: 1.6;
+}
+
+/* ========== 3. COMO OS TEXTOS VÃO FICAR ==========
+   Configurando títulos e textos especiais
+   ============================================================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  /* Fonte elegante e serifada pros títulos */
+  font-family: 'Playfair Display', serif;
+
+  /* Deixando bem forte e negrito */
+  font-weight: 700;
+
+  /* Espaçamento menor pros títulos ficarem compactos */
+  line-height: 1.2;
+}
+
+/* ========== 4. CLASSES ÚTEIS ==========
+   Essas classes você pode usar em QUALQUER lugar do site!
+   ============================================================================ */
+
+/* Classe pra sombras 3D - deixa tudo com profundidade */
+.shadow-3d {
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),  /* Sombra principal (mais forte) */
+    0 1px 8px rgba(0, 0, 0, 0.3);    /* Sombra secundária (mais suave) */
+}
+
+/* Classe pros botões dourados brilhantes */
+.btn-gold {
+  /* Fundo com gradiente dourado maneiro */
+  background: linear-gradient(135deg, #d4af37, #b8860b);
+
+  /* Texto preto pra contrastar */
+  color: #000;
+
+  /* Animação suave quando muda */
+  transition: all 0.3s ease;
+
+  /* Tira a borda padrão chata */
+  border: none;
+
+  /* Cursor de mão quando passa o mouse */
+  cursor: pointer;
+}
+
+/* Efeito quando passa o mouse nos botões dourados */
+.btn-gold:hover {
+  /* Levanta o botão um pouquinho */
+  transform: translateY(-2px);
+
+  /* Sombra dourada mais intensa */
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+
+  /* Mantém o texto preto */
+  color: #000;
+}
+
+/* ========== 5. PARTES ESPECÍFICAS DO SITE ==========
+   Estilos pras seções específicas da barbearia
+   ============================================================================ */
+
+/* --- HEADER (Cabeçalho que fica grudado no topo) --- */
+header {
+  /* Fica fixo no topo da página */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  /* Fica na frente de tudo */
+  z-index: 50;
+
+  /* Fundo meio transparente com efeito blur */
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-backdrop-filter: blur(10px); /* Pra Safari funcionar */
+  backdrop-filter: blur(10px);
+
+  /* Uma linhinha fina embaixo */
+  border-bottom: 1px solid #374151;
+}
+
+/* Logo da barbearia no header */
+header h1 {
+  color: #fbbf24; /* Dourado brilhante */
+  font-weight: 700;
+}
+
+/* Links do menu de navegação */
+header nav a {
+  color: #d1d5db; /* Cinza clarinho */
+  transition: color 0.3s ease; /* Muda devagarinho */
+}
+
+header nav a:hover {
+  color: #fbbf24; /* Vira dourado no hover */
+}
+
+/* --- SEÇÃO HERO (A principal, que chama atenção) --- */
+.hero-section {
+  /* Espaço pro header não cobrir o conteúdo */
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+
+  /* Fundo gradiente escuro maneiro */
+  background: linear-gradient(to bottom, #111827, #000000);
+}
+
+/* --- CARDS DOS SERVIÇOS --- */
+.service-card {
+  /* Fundo escuro */
+  background: #111827;
+
+  /* Bordas arredondadas */
+  border-radius: 0.75rem;
+
+  /* Espaçamento interno */
+  padding: 2rem;
+
+  /* Texto no centro */
+  text-align: center;
+
+  /* Animação suave */
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  /* Levanta o card quando passa o mouse */
+  transform: translateY(-5px);
+}
+
+/* Ícones dos serviços (aqueles emojis grandes) */
+.service-icon {
+  /* Tamanho gigante pros emojis */
+  font-size: 4rem;
+
+  /* Espaço embaixo */
+  margin-bottom: 1rem;
+
+  /* Emoji fica sozinho na linha */
+  display: block;
+}
+
+/* Preços dos serviços */
+.service-price {
+  /* Tamanho grande */
+  font-size: 1.875rem; /* 30px */
+
+  /* Bem negrito */
+  font-weight: 700;
+
+  /* Branco */
+  color: #ffffff;
+
+  /* Espaço em cima */
+  margin-top: 1rem;
+}
+
+/* --- GALERIA DE FOTOS --- */
+.gallery-grid {
+  /* Layout em grid que se adapta */
+  display: grid;
+
+  /* Colunas automáticas com mínimo de 250px */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  /* Espaço entre as fotos */
+  gap: 1.5rem;
+}
+
+.gallery-image {
+  /* Largura total da coluna */
+  width: 100%;
+
+  /* Altura fixa */
+  height: 16rem; /* 256px */
+
+  /* Ajusta a imagem sem deformar */
+  object-fit: cover;
+
+  /* Bordas arredondadas */
+  border-radius: 0.75rem;
+
+  /* Animação suave */
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  /* Efeito zoom quando passa o mouse */
+  transform: scale(1.05);
+}
+
+/* --- CARDS DE CONTATO --- */
+.contact-card {
+  /* Fundo escuro */
+  background: #111827;
+
+  /* Bordas arredondadas */
+  border-radius: 0.75rem;
+
+  /* Espaçamento interno */
+  padding: 2rem;
+}
+
+/* ========== 6. RESPONSIVIDADE ==========
+   Como o site se adapta em celulares, tablets e computadores
+   ============================================================================ */
+
+/* --- TABLETS E TELAS MAIORES (768px+) --- */
+@media (min-width: 768px) {
+  .hero-grid {
+    /* Layout em grid de 2 colunas */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* Espaço entre as colunas */
+    gap: 3rem;
+
+    /* Alinha os itens no centro vertical */
+    align-items: center;
+  }
+
+  .services-grid {
+    /* 3 colunas pros serviços */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .contact-grid {
+    /* 2 colunas pro contato */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* --- COMPUTADORES (1024px+) --- */
+@media (min-width: 1024px) {
+  .container {
+    /* Largura máxima */
+    max-width: 72rem; /* 1152px */
+
+    /* Centraliza na tela */
+    margin: 0 auto;
+
+    /* Padding dos lados */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* ========== 7. ANIMAÇÕES ==========
+   Os movimentos e efeitos legais do site
+   ============================================================================ */
+
+/* Animação de aparecer suavemente (fade-in) */
+@keyframes fadeIn {
+  from {
+    /* Começa invisível e um pouco abaixo */
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    /* Termina visível na posição normal */
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Aplica o fade-in em todas as seções */
+section {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* ========== 8. UTILITÁRIOS ==========
+   Classes pequenas e úteis que você pode usar em qualquer lugar
+   ============================================================================ */
+
+/* Centraliza o texto */
+.text-center {
+  text-align: center;
+}
+
+/* Margem automática (pra centralizar) */
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- PADDINGS (Espaçamento interno) --- */
+.p-4 { padding: 1rem; }
+.p-6 { padding: 1.5rem; }
+.p-8 { padding: 2rem; }
+
+.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+.py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+
+/* --- MARGINS (Espaçamento externo) --- */
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mb-12 { margin-bottom: 3rem; }
+
+.mt-4 { margin-top: 1rem; }
+.mt-8 { margin-top: 2rem; }
+.mt-12 { margin-top: 3rem; }
+
+/* =============================================================================
+   FIM DO ARQUIVO! 🎉
+   ============================================================================
+
+   DICAS FINAIS PROS ESTUDANTES:
+   - Sempre testa tuas mudanças no navegador (F5 é teu amigo!)
+   - Usa o Inspetor de Elementos (F12) pra debugar e entender
+   - Organiza teu CSS em seções pra não ficar perdido
+   - Comenta teu código pra lembrares depois o que faz
+   - Brinca mudando cores e valores pra ver o que acontece!
+
+   Agora vocês sabem como funciona o CSS dessa barbearia maneiríssima! 🚀
+   ============================================================================ */

@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Blinders - Barbearia Old School</title>
+
+  <!-- ========== TAILWIND CSS - Framework de CSS ========== -->
+  <!-- Carrega o Tailwind CSS via CDN para estilização rápida -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ========== STYLES.CSS - Arquivo de estilos personalizado ========== -->
+  <!-- Carrega nosso arquivo CSS personalizado com estilos específicos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="text-gray-100">
+  <!-- ========== HEADER - Cabeçalho ========== -->
+  <header class="bg-black/90 backdrop-blur-sm fixed w-full z-50 border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <h1 class="text-2xl font-bold text-amber-400">The Blinders</h1>
+
+      <!-- Menu de navegação -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="#sobre" class="text-gray-300 hover:text-amber-400 transition">Sobre</a>
+        <a href="#servicos" class="text-gray-300 hover:text-amber-400 transition">Serviços</a>
+        <a href="#galeria" class="text-gray-300 hover:text-amber-400 transition">Galeria</a>
+        <a href="#contato" class="text-gray-300 hover:text-amber-400 transition">Contato</a>
+      </nav>
+
+      <!-- Botão WhatsApp -->
+      <a href="https://wa.me/5511984965060" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg text-sm font-semibold transition">
+        WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- ========== Seção principal ========== -->
+  <section class="hero-section">
+    <div class="container px-4">
+      <div class="hero-grid">
+        <!-- Texto do hero -->
+        <div>
+          <h2 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            Barbearia Old School<br>
+            <span class="text-amber-400">Tradicional</span>
+          </h2>
+          <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+            Cortes clássicos, ambiente acolhedor e atendimento personalizado.
+            Mantendo as tradições da barbearia antiga com qualidade moderna.
+          </p>
+
+          <!-- Botões de ação -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="https://booksy.com/pt-br/instant-experiences/widget/134556"
+               class="btn-gold px-8 py-4 rounded-lg font-semibold text-center shadow-3d">
+              Agendar Horário
+            </a>
+            <a href="https://wa.me/5511984965060"
+               class="border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black px-8 py-4 rounded-lg font-semibold text-center transition">
+              Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Imagem do hero -->
+        <div class="relative">
+          <img src="IMAGENS/FAIXADA.jpeg" alt="Fachada da barbearia"
+               class="w-full h-96 object-cover rounded-2xl shadow-3d">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOBRE - Sobre a barbearia ========== -->
+  <section id="sobre" class="py-16 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-4xl font-bold text-white mb-6">Sobre a Barbearia</h3>
+      <p class="text-lg text-gray-300 leading-relaxed mb-8">
+        A The Blinders é uma barbearia old school que preserva as tradições dos cortes clássicos.
+        Com mais de 10 anos de experiência, oferecemos um ambiente acolhedor onde cada cliente
+        recebe atenção personalizada e acabamento impecável.
+      </p>
+
+      <!-- diferenciais -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-black/50 p-6 rounded-xl shadow-3d">
+          <h4 class="text-xl font-semibold text-amber-400 mb-3">Tradição</h4>
+          <p class="text-gray-300">Mantendo as técnicas clássicas de barbearia</p>
+        </div>
+        <div class="bg-black/50 p-6 rounded-xl shadow-3d">
+          <h4 class="text-xl font-semibold text-amber-400 mb-3">Qualidade</h4>
+          <p class="text-gray-300">Produtos premium e atendimento diferenciado</p>
+        </div>
+        <div class="bg-black/50 p-6 rounded-xl shadow-3d">
+          <h4 class="text-xl font-semibold text-amber-400 mb-3">Experiência</h4>
+          <p class="text-gray-300">Ambiente único e memorável</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Serviços oferecidos ========== -->
+  <section id="servicos" class="py-16 bg-black">
+    <div class="container px-4">
+      <h3 class="text-4xl font-bold text-white text-center mb-12">Nossos Serviços</h3>
+
+      <!-- Grid de serviços -->
+      <div class="services-grid">
+        <div class="service-card shadow-3d">
+          <span class="service-icon">✂️</span>
+          <h4 class="text-2xl font-semibold text-amber-400 mb-3">Corte de Cabelo</h4>
+          <p class="text-gray-300 mb-4">Cortes clássicos e modernos</p>
+          <p class="service-price">R$ 35</p>
+        </div>
+
+        <div class="service-card shadow-3d">
+          <span class="service-icon">🪒</span>
+          <h4 class="text-2xl font-semibold text-amber-400 mb-3">Barba</h4>
+          <p class="text-gray-300 mb-4">Aparação e modelagem profissional</p>
+          <p class="service-price">R$ 25</p>
+        </div>
+
+        <div class="service-card shadow-3d">
+          <span class="service-icon">💇</span>
+          <h4 class="text-2xl font-semibold text-amber-400 mb-3">Pacote Completo</h4>
+          <p class="text-gray-300 mb-4">Corte + barba + lavagem</p>
+          <p class="service-price">R$ 55</p>
+        </div>
+      </div>
+
+      <!-- Botão de agendamento -->
+      <div class="text-center mt-12">
+        <a href="https://booksy.com/pt-br/instant-experiences/widget/134556"
+           class="btn-gold px-8 py-4 rounded-lg font-semibold inline-block shadow-3d">
+          Agendar Agora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Fotos da barbearia ========== -->
+  <section id="galeria" class="py-16 bg-gray-900">
+    <div class="container px-4">
+      <h3 class="text-4xl font-bold text-white text-center mb-12">Nossa Galeria</h3>
+
+      <!-- Grid de imagens -->
+      <div class="gallery-grid">
+        <img src="IMAGENS/FAIXADA.jpeg" alt="Fachada da barbearia" class="gallery-image shadow-3d">
+        <img src="IMAGENS/DECORACAO.jpeg" alt="Decoração interna" class="gallery-image shadow-3d">
+        <img src="IMAGENS/DONO.jpeg" alt="Equipe da barbearia" class="gallery-image shadow-3d">
+        <img src="IMAGENS/MATERIAIS.jpeg" alt="Materiais utilizados" class="gallery-image shadow-3d">
+        <img src="IMAGENS/FAIXADA2.jpeg" alt="Ambiente externo" class="gallery-image shadow-3d">
+        <img src="IMAGENS/FAIXADA3.jpeg" alt="Detalhes da fachada" class="gallery-image shadow-3d">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Informações de contato ========== -->
+  <section id="contato" class="py-16 bg-black">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-4xl font-bold text-white mb-8">Entre em Contato</h3>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <!-- Informações de contato -->
+        <div class="bg-gray-900 p-8 rounded-xl shadow-3d">
+          <h4 class="text-2xl font-semibold text-amber-400 mb-4">Informações</h4>
+          <p class="text-gray-300 mb-2"><strong>Telefone:</strong> (11) 3589-1760</p>
+          <p class="text-gray-300 mb-4"><strong>WhatsApp:</strong> (11) 98496-5060</p>
+          <p class="text-gray-300 mb-4"><strong>Endereço:</strong><br>
+            Av. Antônio Manograsso, 583<br>
+            Chácara Belenzinho, São Paulo</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Av.+Antônio+Manograsso,+583,+Chácara+Belenzinho,+São+Paulo"
+             class="inline-block btn-gold px-6 py-3 rounded-lg font-semibold shadow-3d">
+            Ver no Google Maps
+          </a>
+        </div>
+
+        <!-- Horário de funcionamento -->
+        <div class="bg-gray-900 p-8 rounded-xl shadow-3d">
+          <h4 class="text-2xl font-semibold text-amber-400 mb-4">Horário de Funcionamento</h4>
+          <p class="text-gray-300">Segunda a Sexta: 9h às 19h</p>
+          <p class="text-gray-300">Sábado: 8h às 17h</p>
+          <p class="text-gray-300 mb-4">Domingo: Fechado</p>
+          <a href="https://wa.me/5511984965060"
+             class="inline-block bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold transition shadow-3d">
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Botão final de agendamento -->
+      <a href="https://booksy.com/pt-br/instant-experiences/widget/134556"
+         class="btn-gold px-8 py-4 rounded-lg font-semibold inline-block shadow-3d">
+        Agendar Horário Online
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER/Rodapé ========== -->
+  <footer class="bg-gray-900 py-8 border-t border-gray-800">
+    <div class="container px-4 text-center">
+      <p class="text-gray-400">&copy; 2024 The Blinders Barbearia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT/Funcionalidades ========== -->
+  <script>
+    // Scroll suave para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
