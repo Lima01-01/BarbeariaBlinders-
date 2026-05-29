@@ -90,6 +90,14 @@ Este é um projeto educacional! Sinta-se à vontade para:
 - **Enviar pull requests** com melhorias
 - **Usar como base** para seus próprios projetos
 
+## 🎥 Vídeo de Apresentação
+
+Assista ao vídeo de apresentação do projeto no YouTube:
+
+🔗 **[Clique aqui para assistir](https://www.youtube.com/watch?v=2e9VbCVI_xs)**
+
+O vídeo demonstra as funcionalidades da landing page, a estrutura do código e as principais tecnologias utilizadas no desenvolvimento.
+
 ## 📞 **Contato da Barbearia**
 
 - **Telefone**: (11) 3589-1760
